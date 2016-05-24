@@ -63,7 +63,7 @@
         
         if(dot.x<0){
           dot.x = 0;
-          dot.ra = Math.PI - dot.ra;
+          dot.ra = -dot.ra;
         }
         if(dot.x>cx.width){
           dot.x = cx.width;
@@ -75,7 +75,7 @@
         }
         if(dot.y>cx.height){
           dot.y = cx.height;
-          dot.ra *=-1;
+          dot.ra = Math.PI - dot.ra;
         }
         //随机运动   
         dot.c += dot.cv;
