@@ -83,7 +83,7 @@
         if(dot.c > 50+Math.random()*10 ){
             dot.cv = 1+Math.random(); 
             dot.c = Math.random()*10;
-            dot.ra += (Math.random()-.5)>0?Math.random()*Math.PI/6:Math.random()*-1*Math.PI/6;
+            dot.ra += (Math.random()-.5)*Math.PI/3;
         }
         
         dot.x += dot.v*Math.sin(dot.ra);
